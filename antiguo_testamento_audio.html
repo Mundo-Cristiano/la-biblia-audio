@@ -4,135 +4,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
-<style>
-    *{
-    margin: 0;
-	padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body{
-	margin: 0;
-    width: 100%;
-	height: 100%;
-	background: url(burbujasHD.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	justify-content: center;
-	align-items: center;
-    padding: 10px;
-}
-
-body::before{
-	content:"";
-	width:100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-    background: linear-gradient(135deg,navy,lightblue,navy,purple,pink,purple);
-    opacity: 0.8;
-	z-index: -1;
-}
-
-/* contenedor lista */
-ul {
-    border: solid white 0.5px; 
-    width: 100%;
-    margin: 0px auto;
-    overflow: auto;
-}
-
-/* fondo lista de cantantes */
-.lista li{
-    background-color: rgba(0, 0, 0, 0.2);
-    height: auto;
-    text-align: center;
-    list-style: none;
-    border-radius: 0.2em;
-    width: 90%;
-    height: auto;
-}
-
-
-/* lista de cantantes */
-.lista li a{
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-    text-shadow: 1px 1px 1px black;
-    width: 90%;
-}
-
-li {
-    margin: 0.5em auto;
-    padding: 0.5em;
-}
-
-/*media query*/
-@media only screen and (max-width: 768px) {
-    .lista li a{
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .lista li a{
-        font-size: 2.5em;
-    }
-}
-
-
-</style>
 <body>
-        <ul class="lista">
-            <li><a href="album\genesis.html">Génesis</a></li>
-            <li><a href="album\exodo.html">Éxodo</a></li>
-            <li><a href="album\levitico.html">Levítico</a></li>
-            <li><a href="album\numeros.html">Números</a></li>
-            <li><a href="album\deuteronomio.html">Deuteronomio</a></li>
-            <li><a href="album\josue.html">Josué</a></li>
-            <li><a href="album\jueces.html">Jueces</a></li>
-            <li><a href="album\rut.html">Rut</a></li>
-            <li><a href="album\1_samuel.html">1 Samuel</a></li>
-            <li><a href="album\2_samuel.html">2 Samuel</a></li>
-            <li><a href="album\1_reyes.html">1 Reyes</a></li>
-            <li><a href="album\2_reyes.html">2 Reyes</a></li>
-            <li><a href="album\1_cronicas.html">1 Crónicas</a></li>
-            <li><a href="album\2_cronicas.html">2 Crónicas</a></li>
-            <li><a href="album\esdras.html">Esdras</a></li>
-            <li><a href="album\nehemias.html">Nehemías</a></li>
-            <li><a href="album\ester.html">Ester</a></li>
-            <li><a href="album\job.html">Job</a></li>
-            <li><a href="album\salmos.html">Salmos</a></li>
-            <li><a href="album\proverbios.html">Proverbios</a></li>
-            <li><a href="album\eclesiastes.html">Eclesiastés</a></li>
-            <li><a href="album\cantares.html">Cantares</a></li>
-            <li><a href="album\isaias.html">Isaías</a></li>
-            <li><a href="album\jeremias.html">Jeremías</a></li>
-            <li><a href="album\lamentaciones.html">Lamentaciones</a></li>
-            <li><a href="album\ezequiel.html">Ezequiel</a></li>
-            <li><a href="album\daniel.html">Daniel</a></li>
-            <li><a href="album\oseas.html">Oseas</a></li>
-            <li><a href="album\joel.html">Joel</a></li>
-            <li><a href="album\amós.html">Amós</a></li>
-            <li><a href="album\abdias.html">Abdías</a></li>
-            <li><a href="album\jonas.html">Jonás</a></li>
-            <li><a href="album\miqueas.html">Miqueas</a></li>
-            <li><a href="album\nahum.html">Nahúm</a></li>
-            <li><a href="album\habacuc.html">Habacuc</a></li>
-            <li><a href="album\sofonias.html">Sofonías</a></li>
-            <li><a href="album\hageo.html">Hageo</a></li>
-            <li><a href="album\zacarias.html">Zacarías</a></li>
-            <li><a href="album\malaquias.html">Malaquías</a></li>
+    <h1>Antiguo Testamento</h1>
+    <div class="grid-container">
+
+        <ul class="">
+            <li class="grid-items"><a href="album\genesis.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Génesis</li>
         </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\exodo.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Éxodo</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\levitico.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Levítico</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\numeros.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Números</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\deuteronomio.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Deuteronomio</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\josue.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Josué</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\jueces.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Jueces</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\rut.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Rut</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\1_samuel.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">1 Samuel</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\2_samuel.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">2 Samuel</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\1_reyes.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">1 Reyes</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\2_reyes.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">2 Reyes</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\1_cronicas.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">1 Crónicas</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\2_cronicas.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">2 Crónicas</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\esdras.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Esdras</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\nehemias.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Nehemías</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\ester.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Ester</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\job.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Job</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\salmos.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Salmos</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\proverbios.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Proverbios</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\eclesiastes.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Eclesiastés</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\cantares.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Cantares</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\isaias.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Isaías</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\jeremias.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Jeremías</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\lamentaciones.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Lamentaciones</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\ezequiel.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Ezequiel</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\daniel.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Daniel</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\oseas.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Oseas</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\joel.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Joel</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\amós.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Amós</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\abdias.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Abdías</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\jonas.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Jonás</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\miqueas.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Miqueas</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\nahum.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Nahúm</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\habacuc.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Habacuc</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\sofonias.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Sofonías</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\hageo.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Hageo</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\zacarias.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Zacarías</li>
+        </ul>
+
+        <ul class="">
+            <li class="grid-items"><a href="album\malaquias.html"><img class="iconos" src="audiobiblia2.png" alt=""></a></li>
+            <li class="grid-items pie">Malaquías</li>
+        </ul>
+
+</div>  
 </body>
 </html>
