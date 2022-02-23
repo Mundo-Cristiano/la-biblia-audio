@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title></title>
+</head>
+<style>
+    *{
+    margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+    width: 100%;
+	height: 100%;
+	background: url(burbujasHD.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	justify-content: center;
+	align-items: center;
+    padding: 10px;
+}
+
+body::before{
+	content:"";
+	width:100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+    background: linear-gradient(135deg,navy,lightblue,navy,purple,pink,purple);
+    opacity: 0.8;
+	z-index: -1;
+}
+
+/* contenedor lista */
+ul {
+    border: solid white 0.5px; 
+    width: 100%;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+/* fondo lista de cantantes */
+.lista li{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: auto;
+    text-align: center;
+    list-style: none;
+    border-radius: 0.2em;
+    width: 90%;
+    height: auto;
+}
+
+
+/* lista de cantantes */
+.lista li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black;
+    width: 90%;
+}
+
+li {
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+/*media query*/
+@media only screen and (max-width: 768px) {
+    .lista li a{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .lista li a{
+        font-size: 2.5em;
+    }
+}
+
+</style>
+    <body>
+        <ul class="lista">
+            <li><a href="album/mateo.html">Mateo</a></li>
+            <li><a href="album/marcos.html">Marcos</a></li>
+            <li><a href="album/lucas.html">Lucas</a></li>
+            <li><a href="album/juan.html">Juan</a></li>
+            <li><a href="album/hechos.html">Hechos</a></li>
+            <li><a href="album/romanos.html">Romanos</a></li>
+            <li><a href="album/1_corintios.html">1 Corintios</a></li>
+            <li><a href="album/2_corintios.html">2 Corintios</a></li>
+            <li><a href="album/galatas.html">Gálatas</a></li>
+            <li><a href="album/efesios.html">Efesios</a></li>
+            <li><a href="album/filipenses.html">Filipenses</a></li>
+            <li><a href="album/colosenses.html">Colosenses</a></li>
+            <li><a href="album/1_tesalonicenses.html">1 Tesalonicenses</a></li>
+            <li><a href="album/2_tesalonicenses.html">2 Tesalonicenses</a></li>
+            <li><a href="album/1_timoteo.html">1 Timoteo</a></li>
+            <li><a href="album/2_timoteo.html">2 Timoteo</a></li>
+            <li><a href="album/tito.html">Tito</a></li>
+            <li><a href="album/filemon.html">Filemón</a></li>
+            <li><a href="album/hebreos.html">Hebreos</a></li>
+            <li><a href="album/santiago.html">Santiago</a></li>
+            <li><a href="album/1_pedro.html">1 Pedro</a></li>
+            <li><a href="album/2_pedro.html">2 Pedro</a></li>
+            <li><a href="album/1_juan.html">1 Juan</a></li>
+            <li><a href="album/2_juan.html">2 Juan</a></li>
+            <li><a href="album/3_juan.html">3 Juan</a></li>
+            <li><a href="album/judas.html">Judas</a></li>
+            <li><a href="album/apocalipsis.html">Apocalipsis</a></li>
+        </ul>
+    </body>
+</html>
