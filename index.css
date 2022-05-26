@@ -3,43 +3,20 @@
     margin: 0;
 }
 
-h1{
-    color: white;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
     grid-auto-flow: dense;
-    height: 100%;
-}
-
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        grid-auto-rows: minmax(150px, auto);
-    }
-}
-@media (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-auto-rows: minmax(250px, auto);
-    }
+    height: 10%;
 }
 
 body {
-    background-color: rgb(60, 128, 168);
+    background-color: rgb(0, 0, 0);
     font-family: sans-serif;
     font-size: 0.7rem;
 
-	background: url(burbujasHD.jpg);
+	background: url(album/cover/fondo-ul.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -57,19 +34,8 @@ body::before{
 	top: 0;
 	left: 0;
 	background: linear-gradient(135deg,navy,lightblue,navy,purple,pink,purple);
-	opacity: 0.8;
+	opacity: 0.9;
 	z-index: -1;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 0.5rem;
-    }
-}
-@media (min-width: 1024px) {
-    body {
-        font-size: 1rem;
-    }
 }
 
 .grid-items{
@@ -81,27 +47,174 @@ body::before{
 }
 
 ul {
-    border: solid white 1px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
+
 
 .iconos {
-    width: 200px;
-    height: 200px;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+.pie {
+    height: 10%;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/*Orientacion Vertical*/
+
+@media (max-width: 320px) and (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+        grid-auto-rows: minmax(95px, auto);
+    }
     .iconos {
-        width:150px;
-        height: 150px;
+        width: 85px;
+        height: 85px;
     }
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 321px) and (max-width: 374px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+        grid-auto-rows: minmax(105px, auto);
+    }
     .iconos {
-        width: 250px;
-        height: 250px;
+        width: 95px;
+        height: 95px;
     }
 }
+
+@media only screen and (min-width: 375px) and (max-width: 411px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+        grid-auto-rows: minmax(115px, auto);
+    }
+    .iconos {
+        width: 105px;
+        height: 105px;
+    }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 711px) and (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+        grid-auto-rows: minmax(125px, auto);
+    }
+    .iconos {
+        width: 115px;
+        height: 115px;
+    }
+}
+
+@media only screen and (min-width: 712px) and (max-width: 767px) and (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+    }
+    .iconos {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 756px) and (max-width: 1023px) and (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+        grid-auto-rows: minmax(175px, auto);
+    }
+    .iconos {
+        width: 165px;
+        height: 165px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        grid-auto-rows: minmax(240px, auto);
+    }
+    .iconos {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+/*Orientacion Horizontal*/
+
+@media (max-width: 480px) and (orientation: landscape) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        grid-auto-rows: minmax(110px, auto);
+    }
+    .iconos {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 712px) and (orientation: landscape) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+    }
+    .iconos {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 713px) and (max-width: 913px) and (orientation: landscape) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        grid-auto-rows: minmax(170px, auto);
+        gap: 10px;
+    }
+    .iconos {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media only screen and (min-width: 914px) and (max-width: 1023px) and (orientation: landscape) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
+        gap: 10px;
+    }
+    .iconos {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-auto-rows: minmax(230px, auto);
+        gap: 15px;
+    }
+    .iconos {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: minmax(300px, auto);
+        gap: 20px;
+    }
+    .iconos {
+        width: 290px;
+        height: 290px;
+    }
+}
+
