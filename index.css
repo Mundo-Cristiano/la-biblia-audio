@@ -14,7 +14,7 @@
 body {
     background-color: rgb(0, 0, 0);
     font-family: sans-serif;
-	background: url(libros/img/fondo-ul.png);
+	background: url(album/cover/fondo-ul.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
